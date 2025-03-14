@@ -23,5 +23,6 @@ return (
     </div>
 
 )
-
 };
+
+export  default Layout;
