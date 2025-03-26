@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Layout from "./components/Layout";
-import Home from "./components/Home";
-import About from "./components/About";
+import Layout from "./Layout";
+import Home from "./Home";
+import About from "./About";
+
 
 function App() {
     return (
@@ -19,3 +19,6 @@ function App() {
 }
 
 export default App;
+
+
+

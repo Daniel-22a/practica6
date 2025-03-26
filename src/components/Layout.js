@@ -1,28 +1,27 @@
-import {Box, Typography} from "@mui/material";
+import {Box, Container, Typography} from "@mui/material";
+import Navbar from "./Navbar";
+import PokemonCard from "./PokemonCard";
 
-const Layout =({ children })=> {
-return (
+const Layout = ({ children}) => {
 
-    <div>
+    return (
 
-    <Box>
-        <container>
-            {children}
-        </container>
-    </Box>
+        <div>
+            <Box>
+                <Navbar/>
+                <Container>
+                    {children}
+                </Container>
+            </Box>
 
+            <Box>
+                <Typography variant="h4" component="h1" sx={{mb: 2}}>
+                    Derechos Reservados
+                </Typography>
+            </Box>
 
-    <Box>
+        </div>
 
-        <Typography variant="h4" component="h1" sx={{mb: 2}}>
-            Derechos reservados
-        </Typography>
+    )};
 
-    </Box>
-
-    </div>
-
-)
-};
-
-export  default Layout;
+export default Layout;

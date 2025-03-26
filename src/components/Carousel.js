@@ -1,12 +1,11 @@
-import {Pagination, Autoplay, Navigation} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay, Navigation, Pagination} from "swiper/modules";
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 
 const Carousel = () => {
     return (
-
         <Swiper modules = {[Navigation,Pagination,Autoplay]} spaceBetween={50} slidesPerView={1} navigation
                 pagination={{clickable: true}}
                 autoplay = {{delay: 3000}}>
